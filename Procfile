@@ -1,2 +1,2 @@
-relese: python manage.py migrate
+relese: python /backend/manage.py migrate
 web: gunicorn backend.wsgi --log-file -
