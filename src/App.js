@@ -30,6 +30,7 @@ class App extends Component {
       .then((res) => this.setState({ todoList: res.data }))
       .catch((err) => console.log(err));
   }
+
   toggle = () => {
     this.setState({ modal: !this.state.modal });
   };
