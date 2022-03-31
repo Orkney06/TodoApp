@@ -39,12 +39,14 @@ class App extends Component {
 
     if (item.id) {
       axios
-        .put(`http://localhost8000/api/todos/`, item)
+        // .put(`http://localhost8000/api/todos/`, item)
+        .put(`/api/todos/${item.id}/`, item)
         .then((res) => this.refreshList());
       return;
     }
     axios
-      .post(`http://localhost:8000/api/todos/${item.id}`)
+      // .post(`http://localhost:8000/api/todos/${item.id}`)
+      .post("/api/todos/", item)
       .then((res) => this.refreshList());
   };
 
