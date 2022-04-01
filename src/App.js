@@ -53,8 +53,8 @@ class App extends Component {
 
   handleDelete = (item) => {
     axios
-    .delete(`/api/todos/${item.id}/`)
-    .then((res) => this.refreshList());
+      .delete(`/api/todos/${item.id}/`)
+      .then((res) => this.refreshList());
   };
 
   createItem = () => {
