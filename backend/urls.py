@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import router
-from django.urls import path, include
+from django.urls import path, include, re_path
 from rest_framework import routers
 from todo import views
 from django.views.generic import TemplateView
